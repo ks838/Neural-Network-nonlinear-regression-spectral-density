@@ -14,7 +14,8 @@ class Class_spectral_density():
           are described by spectral density functions, whose forms can be rather complicated 
           (can be like the NMR spectra).
         2 The most common ones include: Debye form, Ohmic form, super Ohmin form, Lorentzian form.
-        3 Any form can be fitted by a series of Lorentizian functions, whose limiting forms are Dirac Delta 
+        3 Any form can be fitted by a series of Lorentizian functions (please see
+          "fitting spectral density obtained from MD.png" for example), whose limiting forms are Dirac Delta 
           functions. Here, we used 1 Debye and 4 Lorentzian.
         '''
         y_Debye_1 = 0.05*1*x/((x+0.01)**2 + x)

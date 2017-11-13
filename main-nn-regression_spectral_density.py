@@ -18,8 +18,8 @@
 
 
 @ Details on our Neural Network regression:
-           1 During our training, we use the batch and SGD skills, but Only one epoch: 
-             because the fitting of our present functions is not that hard for Neural Network. 
+           1 During our training, we use the batch,SGD skills, as well as multi-epoch. 
+             The fitting for our present functions (mathematically smooth) is not that hard for Neural Network. 
              A quantym dynamics theoretist can always think out sth harder, e.g.: 
              a integreal-differential expression. The readers can play with that.
            2 Optimizing functions where some of the variables in the objective 

@@ -4,10 +4,16 @@ network with the help of tensorflow.
 #2 It is well-known that most machine learning methods are in nature interpolation. 
 We have tested the fitting capacity for neural network: 
 	
+<<<<<<< HEAD
   2.1 For interpolation, a simple NN can fit very complicated combination of simple 
   mathematical functions efficiently.
 	
   2.2 For extrapolation, NN usually gives poor results. 
+=======
+2.1 For interpolation, a simple NN can fit very complicated combination of simple mathematical functions efficiently.
+	
+2.2 For extrapolation, NN usually gives poor results. 
+>>>>>>> 7970ab5e78ff1d1bdee911b946a7ef06464378d0
 
 
 

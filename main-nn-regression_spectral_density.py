@@ -44,7 +44,7 @@ from nn_regression_funcs import *
 
 # We vector_nNodesuld build a Neural Network with regularization
 batchSize = 256
-nNodes = 100
+nNodes = 50
 # sigma is the standard deviation of the normal distribution
 sigma = 0.1 
 lambda_regularization = 2e-4
@@ -145,6 +145,11 @@ with graph.as_default():
             b[i] = tf.Variable(tf.zeros([nNodes]))
             WX = tf.add(WX, b[i])
             #WX = tf.nn.tanh(WX)
+            '''
+            ReLUs have the desirable property that they do not 
+            require input normalization to prevent them 
+            from saturating.
+            '''
             WX = tf.nn.relu(WX)
         # the output layer
         vector_nNodes = tf.ones([nNodes, 1], tf.float32)

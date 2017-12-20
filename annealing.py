@@ -48,7 +48,7 @@ if __name__ == '__main__':
 			x_tmp = x
 	metrop = plt.scatter(xlist,ylist,color='red',alpha=.1)
 	plt.legend((analytic,metrop),
-           ('analytical', 'anealing'),
+           ('analytical', 'simulated annealing'),
            scatterpoints=1,
            loc='upper right',
            ncol=3,

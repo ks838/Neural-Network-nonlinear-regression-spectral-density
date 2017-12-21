@@ -5,8 +5,7 @@
 			   The use of a temperature parameter and the different definition of "alpha".
            
 @ Refs  :   1. K. Murphy "Machine learning: a probabilistic perspective",2012 6th printing,
-			   Chap 24.6 (Algorithm 24.2)
-
+			   Chap 24.6。
 '''
 
 import numpy as np 

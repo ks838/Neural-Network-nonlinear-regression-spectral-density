@@ -1,6 +1,8 @@
 #1 We did Nonlinear regression for spectral density functions using a multi-layer neural 
    network:
+
    1.1 writing  almost from scatch with tensorflow (main-nn-regression_spectral_density.py),
+   
    1.2 a more simplified edition using keras (main-nn-regression-using-keras.py).
 
 #2 It is well-known that most machine learning methods are in nature interpolation. 
@@ -19,7 +21,7 @@
    this kind of "unfriend" distribution to further test the ability of deep neural network.
 
 
-#4 We also did interpolation or inferences with some other machine learning methods, which include:
+#4 I also did interpolation or inferences with some other machine learning methods, which include:
    direct quadratic/cubic interpolation,
    Metropolis-Hastings sampling,
    simulated annealing

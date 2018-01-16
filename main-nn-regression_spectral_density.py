@@ -9,9 +9,9 @@
              is included in J(w). The J(w) can be obtained from molecular dynamics simulation, 
              whose form can be rather complicated. But it can always fit from a combination of 
              Lorentian distributions.
-           3 It's well-known, most machine learning methods are in nature interplation things.
+           3 It's well-known, most machine learning methods are in nature interpolation things.
              So is Neural Network. As vector_nNodesuld be proved by the results, 
-             NN is very good at interplation.
+             NN is very good at interpolation.
              However, the extrapolation results are usually horrible.
            4 We have also tested extraplation using NN.
 
@@ -52,7 +52,7 @@ initRate = 0.001
 nLayers = 3
 
 # ---------------------Input data: x and y -------------------------
-Obj_SD = Class_spectral_density()
+Obj_SD = Class_spectral_density()# defined in nn_regression_funcs.py
 N_all = 30000
 
 x_start = 0
@@ -89,9 +89,9 @@ np.random.shuffle(indexes)
 #assert(1>2)
 
 # The data set is seperated into: 
-#    1 validation set
-#    2 testing set
-#    3 the rest: training set
+#    1) validation set
+#    2) testing set
+#    3) the rest: training set
 N_valid_indexes = int(N_all/8)
 N_test_indexes  = int(N_all/8)
 valid_indexes  = indexes[0:N_valid_indexes]
@@ -180,6 +180,7 @@ with graph.as_default():
     regularization_term = regularization_term * lambda_regularization
     
     # Add regularization term to loss
+    # the add of the regularization term is quite efficient
     loss = loss + regularization_term
 
     # Optimizer.
@@ -232,21 +233,22 @@ with tf.Session(graph=graph) as sess:
                 break
             else:
                 valid_rms_errortmp = valid_rms_error
-    print("Testing Error(RMS) for Interplation: %f" % Obj_SD.rms_error(test_results.eval(), testY))
+    print("Testing Error(RMS) for Interpolation: %f" % Obj_SD.rms_error(test_results.eval(), testY))
     predY = total_results.eval()
 print("Execution time: %f seconds. " % (time.time() - startTime))
 
+plt.title('Interpolation')
 plt.plot(y, 'red',lw = 7)
-plt.plot(predY, '*', color = "xkcd:sky blue")
+plt.plot(predY, '*', color='xkcd:sky blue')
 plt.show()
 
-# ======================== Part II: Extrapolation Results ============================
-print("******************* Extrapolation Part ******************")
+# ======================== Extrapolation Results ============================
+print('*'*25 + 'Extrapolation Part' + '*'*25)
 with tf.Session(graph = graph) as sess:
     tf.global_variables_initializer().run()
     predY = y_extrap_fit.eval()
 print("The results of extrapolations are terrible ~~")
-#plt.plot(y,'red',lw=7)
+plt.title('Extrapolation')
 plt.plot(y_extrap, 'green',lw = 5)
-plt.plot(predY, '*', color = "xkcd:sky blue")
+plt.plot(predY, '*', color='xkcd:sky blue')
 plt.show()

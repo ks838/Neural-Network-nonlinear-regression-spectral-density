@@ -1,5 +1,7 @@
 #1 We did Nonlinear regression for spectral density functions using a multi-layer neural 
-   network with the help of tensorflow.
+   network:
+   1.1 writing  almost from scatch with tensorflow (main-nn-regression_spectral_density.py),
+   1.2 a more simplified edition using keras (main-nn-regression-using-keras.py).
 
 #2 It is well-known that most machine learning methods are in nature interpolation. 
    We have tested the fitting capacity for neural network: 

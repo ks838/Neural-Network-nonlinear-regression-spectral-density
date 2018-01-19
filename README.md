@@ -24,5 +24,6 @@
 #4 I also did interpolation or inferences with some other machine learning methods, which include:
    direct quadratic/cubic interpolation,
    Metropolis-Hastings sampling,
-   simulated annealing
+   simulated annealing,
+   kernel methods, including kernelized SVM for regression and kernel ridge regression
 

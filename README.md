@@ -20,7 +20,6 @@
    a series of Lorentizan distributions. However, readers who feel this interesting can use 
    this kind of "unfriend" distribution to further test the ability of deep neural network.
 
-
 #4 I also did interpolation or inferences with some other machine learning methods, which include:
    
    4.1 direct quadratic/cubic interpolation: 

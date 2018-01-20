@@ -22,8 +22,41 @@
 
 
 #4 I also did interpolation or inferences with some other machine learning methods, which include:
-   direct quadratic/cubic interpolation,
-   Metropolis-Hastings sampling,
-   simulated annealing,
-   kernel methods, including kernelized SVM for regression and kernel ridge regression
+   
+   4.1 direct quadratic/cubic interpolation: 
+       scipy-interp1d.py
 
+   4.2 Metropolis-Hastings sampling:
+       metropolis-hastings.py
+   
+   4.3 simulated annealing:
+       annealing.py
+   
+   4.4 kernel methods, including kernelized SVM for regression and kernel ridge regression:
+       kernel-nonlinear-regression.py
+   
+   4.5 Gaussian process for regression:
+       gaussian-process-regression.py
+
+   4.6 K-means for clustering:
+       K-means-clustering.py
+
+   4.7 k nearest neighbors for regression:
+       knn-regression.py
+
+#5 References
+   5.1 K. Murphy "Machine learning: a probabilistic perspective",2012, 6th printing,
+   
+       Chap-1.4.2 A simple non-parametric classifier: K-nearest neighbors
+       
+       Chap-11.4.2 EM for GMMs
+
+       Chap-14.4.3 Kernelized ridge regression
+
+       Chap-14.5.1 SVMs for regression
+
+       Chap-15.2 GPs for regression
+
+       Chap-24.3 Metropolis Hastings algorithm
+
+       Chap-24.6 Annealing methods

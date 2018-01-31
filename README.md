@@ -47,6 +47,8 @@
    5.1 K. Murphy "Machine learning: a probabilistic perspective",2012, 6th printing,
    
        Chap-1.4.2 A simple non-parametric classifier: K-nearest neighbors
+
+       Chap-7.6 Bayesian linear regression
        
        Chap-11.4.2 EM for GMMs
 

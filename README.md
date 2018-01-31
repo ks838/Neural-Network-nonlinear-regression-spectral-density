@@ -58,6 +58,8 @@
 
        Chap-15.2 GPs for regression
 
+       Chap-16.4.3 Adaboost
+
        Chap-24.3 Metropolis Hastings algorithm
 
        Chap-24.6 Annealing methods
